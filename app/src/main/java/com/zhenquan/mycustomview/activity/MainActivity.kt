@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_edit.setOnClickListener(this)
         btn_pie.setOnClickListener(this)
         btn_leafloading.setOnClickListener(this)
+        btn_text.setOnClickListener(this)
     }
 
 
@@ -24,6 +25,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         when (v?.id) {
             R.id.btn_edit -> {
                 startActivity(Intent(MainActivity@ this, EditActivity::class.java))
+            }
+            R.id.btn_text ->{
+                startActivity(Intent(MainActivity@ this, TextActivity::class.java))
             }
             R.id.btn_pie -> {
                 startActivity(Intent(MainActivity@ this, SecondActivity::class.java))

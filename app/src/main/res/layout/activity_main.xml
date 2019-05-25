@@ -23,4 +23,9 @@
             android:text="带删除的 EditText"
             android:id="@+id/btn_edit"
             android:layout_height="wrap_content" />
+    <Button
+            android:layout_width="match_parent"
+            android:text="自定义 text "
+            android:id="@+id/btn_text"
+            android:layout_height="wrap_content" />
 </LinearLayout>

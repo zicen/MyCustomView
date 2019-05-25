@@ -8,4 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--
+        自定义属性的含义解释：
+        border_Color   //边框的颜色
+        border_Select_Color   //选中状态时边框的颜色
+        background_Color  //设置背景颜色
+        background_Select_Color //设置背景选中状态的颜色
+        border_Width    //边框的宽度
+        border_Radius  //设置圆角大小
+        -->
+    <declare-styleable name="MyTextView">
+        <attr name="border_Color" format="color" />
+        <attr name="border_Select_Color" format="color" />
+        <attr name="background_Color" format="color" />
+        <attr name="background_Select_Color" format="color" />
+        <attr name="border_Width" format="dimension" />
+        <attr name="border_Radius" format="dimension" />
+    </declare-styleable>
 </resources>
