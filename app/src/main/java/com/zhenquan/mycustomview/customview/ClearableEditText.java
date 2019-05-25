@@ -4,11 +4,11 @@ import android.content.Context;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import com.zhenquan.mycustomview.R;
+import com.zhenquan.mycustomview.loding.UiUtils;
 
 
 public class ClearableEditText extends AppCompatEditText {
@@ -17,6 +17,7 @@ public class ClearableEditText extends AppCompatEditText {
     private static final int DRAWABLE_RIGHT = 2;
     private static final int DRAWABLE_BOTTOM = 3;
     private Drawable mClearDrawable;
+    private Drawable mDrawableLeft;
 
     public ClearableEditText(Context context) {
         super(context);
@@ -35,11 +36,12 @@ public class ClearableEditText extends AppCompatEditText {
     }
 
     private void init(Context context) {
-        Drawable drawable = ContextCompat.getDrawable(context, R.drawable.delete_search_history);
-        final Drawable wrappedDrawable = DrawableCompat.wrap(drawable); //Wrap the drawable so that it can be tinted pre Lollipop
-        DrawableCompat.setTint(wrappedDrawable, getCurrentHintTextColor());
-        mClearDrawable = wrappedDrawable;
-        mClearDrawable.setBounds(0, 0, mClearDrawable.getIntrinsicHeight(), mClearDrawable.getIntrinsicHeight());
+        mClearDrawable = ContextCompat.getDrawable(context, R.drawable.delete_search_history);
+        mDrawableLeft = ContextCompat.getDrawable(context, R.drawable.search_hint);
+        mClearDrawable.setBounds(0, 0, UiUtils.dipToPx(context, 15), UiUtils.dipToPx(context, 15));
+        mDrawableLeft.setBounds(0, 0, UiUtils.dipToPx(context, 15), UiUtils.dipToPx(context, 15));
+        setCompoundDrawablePadding(UiUtils.dipToPx(context, 9));
+        setCompoundDrawables(mDrawableLeft, null, null, null);
     }
 
     @Override
@@ -69,7 +71,6 @@ public class ClearableEditText extends AppCompatEditText {
     }
 
     private void setClearIconVisible(boolean visible) {
-        setCompoundDrawablesWithIntrinsicBounds(getCompoundDrawables()[DRAWABLE_LEFT], getCompoundDrawables()[DRAWABLE_TOP],
-                visible ? mClearDrawable : null, getCompoundDrawables()[DRAWABLE_BOTTOM]);
+        setCompoundDrawables(mDrawableLeft, null, visible ? mClearDrawable : null, null);
     }
 }
