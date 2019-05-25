@@ -1,5 +1,5 @@
 
-package com.zhenquan.mycustomview.loding;
+package com.zhenquan.mycustomview.activity;
 
 import java.util.Random;
 
@@ -17,6 +17,8 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 import com.zhenquan.mycustomview.R;
+import com.zhenquan.mycustomview.utils.AnimationUtils;
+import com.zhenquan.mycustomview.customview.LeafLoadingView;
 
 
 public class LeafLoadingActivity extends Activity implements OnSeekBarChangeListener,

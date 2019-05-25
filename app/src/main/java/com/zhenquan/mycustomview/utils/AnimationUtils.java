@@ -1,5 +1,5 @@
 
-package com.zhenquan.mycustomview.loding;
+package com.zhenquan.mycustomview.utils;
 
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;

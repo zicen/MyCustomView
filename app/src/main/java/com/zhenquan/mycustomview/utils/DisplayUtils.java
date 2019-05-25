@@ -1,11 +1,11 @@
 
-package com.zhenquan.mycustomview.loding;
+package com.zhenquan.mycustomview.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
-public class UiUtils {
+public class DisplayUtils {
 
     static public int getScreenWidthPixels(Context context) {
         DisplayMetrics dm = new DisplayMetrics();

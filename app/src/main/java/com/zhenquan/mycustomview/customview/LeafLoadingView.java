@@ -1,5 +1,5 @@
 
-package com.zhenquan.mycustomview.loding;
+package com.zhenquan.mycustomview.customview;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -19,6 +19,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import com.zhenquan.mycustomview.R;
+import com.zhenquan.mycustomview.utils.DisplayUtils;
 
 
 public class LeafLoadingView extends View {
@@ -87,8 +88,8 @@ public class LeafLoadingView extends View {
     public LeafLoadingView(Context context, AttributeSet attrs) {
         super(context, attrs);
         mResources = getResources();
-        mLeftMargin = UiUtils.dipToPx(context, LEFT_MARGIN);
-        mRightMargin = UiUtils.dipToPx(context, RIGHT_MARGIN);
+        mLeftMargin = DisplayUtils.dipToPx(context, LEFT_MARGIN);
+        mRightMargin = DisplayUtils.dipToPx(context, RIGHT_MARGIN);
 
         mLeafFloatTime = LEAF_FLOAT_TIME;
         mLeafRotateTime = LEAF_ROTATE_TIME;

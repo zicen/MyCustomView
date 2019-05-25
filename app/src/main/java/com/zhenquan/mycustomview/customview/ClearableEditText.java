@@ -8,7 +8,7 @@ import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import com.zhenquan.mycustomview.R;
-import com.zhenquan.mycustomview.loding.UiUtils;
+import com.zhenquan.mycustomview.utils.DisplayUtils;
 
 
 public class ClearableEditText extends AppCompatEditText {
@@ -38,9 +38,9 @@ public class ClearableEditText extends AppCompatEditText {
     private void init(Context context) {
         mClearDrawable = ContextCompat.getDrawable(context, R.drawable.delete_search_history);
         mDrawableLeft = ContextCompat.getDrawable(context, R.drawable.search_hint);
-        mClearDrawable.setBounds(0, 0, UiUtils.dipToPx(context, 15), UiUtils.dipToPx(context, 15));
-        mDrawableLeft.setBounds(0, 0, UiUtils.dipToPx(context, 15), UiUtils.dipToPx(context, 15));
-        setCompoundDrawablePadding(UiUtils.dipToPx(context, 9));
+        mClearDrawable.setBounds(0, 0, DisplayUtils.dipToPx(context, 15), DisplayUtils.dipToPx(context, 15));
+        mDrawableLeft.setBounds(0, 0, DisplayUtils.dipToPx(context, 15), DisplayUtils.dipToPx(context, 15));
+        setCompoundDrawablePadding(DisplayUtils.dipToPx(context, 9));
         setCompoundDrawables(mDrawableLeft, null, null, null);
     }
 
