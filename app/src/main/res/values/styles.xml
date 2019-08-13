@@ -8,21 +8,42 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!--
-        自定义属性的含义解释：
-        border_Color   //边框的颜色
-        border_Select_Color   //选中状态时边框的颜色
-        background_Color  //设置背景颜色
-        background_Select_Color //设置背景选中状态的颜色
-        border_Width    //边框的宽度
-        border_Radius  //设置圆角大小
-        -->
-    <declare-styleable name="MyTextView">
-        <attr name="border_Color" format="color" />
-        <attr name="border_Select_Color" format="color" />
-        <attr name="background_Color" format="color" />
-        <attr name="background_Select_Color" format="color" />
-        <attr name="border_Width" format="dimension" />
-        <attr name="border_Radius" format="dimension" />
+    <declare-styleable name="TextBorderView">
+        <!-- 边框的颜色 -->
+        <attr name="tbv_border_color" format="color"/>
+        <!-- 选中状态时边框的颜色 -->
+        <attr name="tbv_border_select_color" format="color"/>
+        <!-- 设置背景颜色 -->
+        <attr name="tbv_bg_color" format="color"/>
+        <!-- 设置背景选中状态的颜色 -->
+        <attr name="tbv_bg_select_color" format="color"/>
+        <!-- 边框的宽度 -->
+        <attr name="tbv_border_width" format="dimension"/>
+        <!-- 设置圆角大小 -->
+        <attr name="tbv_border_radius" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ProgressRing">
+        <!--进度起始色-->
+        <attr name="pr_progress_start_color" format="color"/>
+        <!--进度结束色-->
+        <attr name="pr_progress_end_color" format="color"/>
+        <!--背景起始色-->
+        <attr name="pr_bg_start_color" format="color"/>
+        <!--背景中间色-->
+        <attr name="pr_bg_mid_color" format="color"/>
+        <!--背景结束色-->
+        <attr name="pr_bg_end_color" format="color"/>
+        <!--进度值 介于0-100-->
+        <attr name="pr_progress" format="integer"/>
+        <!--进度宽度-->
+        <attr name="pr_progress_width" format="dimension"/>
+        <!--起始角度-->
+        <attr name="pr_start_angle" format="integer"/>
+        <!--扫过的角度-->
+        <attr name="pr_sweep_angle" format="integer"/>
+        <!--是否显示动画-->
+        <attr name="pr_show_anim" format="boolean"/>
     </declare-styleable>
 </resources>

@@ -18,8 +18,23 @@
             android:textColor="#181e2c"
             android:text="查询"
             android:textSize="12sp"
-            a:background_Color="#ffffff"
-            a:border_Color="#181e2c"
-            a:border_Radius="8dp"
-            a:border_Width="2dp" />
+            a:tbv_bg_color="#ffffff"
+            a:tbv_border_color="#181e2c"
+            a:tbv_border_radius="8dp"
+            a:tbv_border_width="2dp"/>
+    <com.zhenquan.mycustomview.customview.TextBorderView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#181e2c"
+            android:text="查询"
+            android:textSize="12sp"
+            a:tbv_bg_color="@color/colorPrimary"
+            a:tbv_bg_select_color="@color/colorAccent"
+            a:tbv_border_radius="8dp"
+    />
 </LinearLayout>

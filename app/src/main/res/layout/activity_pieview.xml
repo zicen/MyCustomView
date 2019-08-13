@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:orientation="vertical"
-    tools:context=".activity.SecondActivity">
+    tools:context=".activity.PieViewActivity">
 
     <com.zhenquan.mycustomview.customview.pieview.PieView
         android:id="@+id/pieview"

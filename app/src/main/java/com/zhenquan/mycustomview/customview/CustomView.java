@@ -20,7 +20,7 @@ import android.view.View;
  * github: https://github.com/zicen
  */
 
-public class CustomView1 extends View {
+public class CustomView extends View {
     // 1.创建一个画笔
     private Paint mPaint = new Paint();
 
@@ -32,7 +32,7 @@ public class CustomView1 extends View {
     }
 
     // 3.在构造函数中初始化
-    public CustomView1(Context context) {
+    public CustomView(Context context) {
         super(context);
         initPaint();
 
@@ -101,11 +101,11 @@ public class CustomView1 extends View {
     }
 
 
-    public CustomView1(Context context, @Nullable AttributeSet attrs) {
+    public CustomView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public CustomView1(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public CustomView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 

@@ -9,6 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".activity.ProgressRingActivity">
+        </activity>
         <activity android:name=".activity.TextActivity">
         </activity>
         <activity android:name=".activity.EditActivity">
@@ -20,8 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.SecondActivity"/>
-        <activity android:name=".activity.LeafLoadingActivity"/>
+        <activity android:name=".activity.PieViewActivity"/>
     </application>
 
 </manifest>

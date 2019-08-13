@@ -4,13 +4,13 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.zhenquan.mycustomview.R
 import com.zhenquan.mycustomview.customview.pieview.PieData
-import kotlinx.android.synthetic.main.activity_second.*
+import kotlinx.android.synthetic.main.activity_pieview.*
 
-class SecondActivity : AppCompatActivity() {
+class PieViewActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_second)
+        setContentView(R.layout.activity_pieview)
         val arrayListOf = arrayListOf<PieData>()
         arrayListOf.add(PieData("name1", 100f))
         arrayListOf.add(PieData("name2", 200f))

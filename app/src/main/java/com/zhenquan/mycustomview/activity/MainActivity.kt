@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
         btn_edit.setOnClickListener(this)
         btn_pie.setOnClickListener(this)
-        btn_leafloading.setOnClickListener(this)
         btn_text.setOnClickListener(this)
+        btn_progress_ring.setOnClickListener(this)
     }
 
 
@@ -25,25 +25,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_edit -> {
                 startActivity(Intent(MainActivity@ this, EditActivity::class.java))
             }
-            R.id.btn_text ->{
+            R.id.btn_text -> {
                 startActivity(Intent(MainActivity@ this, TextActivity::class.java))
             }
             R.id.btn_pie -> {
-                startActivity(Intent(MainActivity@ this, SecondActivity::class.java))
+                startActivity(Intent(MainActivity@ this, PieViewActivity::class.java))
             }
-            R.id.btn_leafloading -> {
-                startActivity(
-                    Intent(
-                        MainActivity@ this,
-                        LeafLoadingActivity::class.java
-                    )
-                )
+            R.id.btn_progress_ring -> {
+                startActivity(Intent(MainActivity@ this, ProgressRingActivity::class.java))
             }
+
         }
     }
 
-    inline fun consume(f: () -> Unit): Boolean {
-        f()
-        return true;
-    }
+
 }
