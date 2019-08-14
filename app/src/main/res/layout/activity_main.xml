@@ -32,4 +32,10 @@
             android:textAllCaps="false"
             android:id="@+id/btn_progress_ring"
             android:layout_height="wrap_content"/>
+    <Button
+            android:layout_width="match_parent"
+            android:text="自定义圆形下载状态按钮"
+            android:textAllCaps="false"
+            android:id="@+id/btn_circle_download"
+            android:layout_height="wrap_content"/>
 </LinearLayout>

@@ -30,7 +30,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:textColor="#181e2c"
+            android:textColor="#fff"
             android:text="查询"
             android:textSize="12sp"
             a:tbv_bg_color="@color/colorPrimary"

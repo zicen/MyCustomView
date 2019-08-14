@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_pie.setOnClickListener(this)
         btn_text.setOnClickListener(this)
         btn_progress_ring.setOnClickListener(this)
+        btn_circle_download.setOnClickListener(this)
     }
 
 
@@ -33,6 +34,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btn_progress_ring -> {
                 startActivity(Intent(MainActivity@ this, ProgressRingActivity::class.java))
+            }
+            R.id.btn_circle_download -> {
+                startActivity(Intent(MainActivity@ this, CircleDownloadProgressBarActivity::class.java))
             }
 
         }

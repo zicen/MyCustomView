@@ -46,4 +46,17 @@
         <!--是否显示动画-->
         <attr name="pr_show_anim" format="boolean"/>
     </declare-styleable>
+
+    <declare-styleable name="CircleDownloadProgressBar">
+        <!--默认圆的颜色-->
+        <attr name="cdpb_defaultColor" format="color"/>
+        <!--进度条的颜色-->
+        <attr name="cdpb_reachedColor" format="color"/>
+        <!--默认圆的高度-->
+        <attr name="cdpb_defaultHeight" format="dimension"/>
+        <!--进度条的高度-->
+        <attr name="cdpb_reachedHeight" format="dimension"/>
+        <!--圆的半径-->
+        <attr name="cdpb_radius" format="dimension"/>
+    </declare-styleable>
 </resources>
