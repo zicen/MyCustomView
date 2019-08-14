@@ -1,6 +1,6 @@
 package com.zhenquan.mycustomview.customview.pieview;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * 创建人: zhenquan

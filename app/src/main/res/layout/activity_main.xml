@@ -38,4 +38,10 @@
             android:textAllCaps="false"
             android:id="@+id/btn_circle_download"
             android:layout_height="wrap_content"/>
+    <Button
+            android:layout_width="match_parent"
+            android:text="方便的给控件设置阴影"
+            android:textAllCaps="false"
+            android:id="@+id/btn_shadow_helper"
+            android:layout_height="wrap_content"/>
 </LinearLayout>

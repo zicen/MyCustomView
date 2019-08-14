@@ -1,6 +1,6 @@
 package com.zhenquan.mycustomview.activity
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.zhenquan.mycustomview.R
 import com.zhenquan.mycustomview.customview.pieview.PieData

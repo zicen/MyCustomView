@@ -1,7 +1,7 @@
 package com.zhenquan.mycustomview.activity
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.zhenquan.mycustomview.R
@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_text.setOnClickListener(this)
         btn_progress_ring.setOnClickListener(this)
         btn_circle_download.setOnClickListener(this)
+        btn_shadow_helper.setOnClickListener(this)
     }
 
 
@@ -37,6 +38,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btn_circle_download -> {
                 startActivity(Intent(MainActivity@ this, CircleDownloadProgressBarActivity::class.java))
+            }
+            R.id.btn_shadow_helper -> {
+                startActivity(Intent(MainActivity@ this, ShadowHelperAvtivity::class.java))
             }
 
         }

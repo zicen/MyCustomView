@@ -3,11 +3,11 @@ def supportVersion = "27.0.1"
 project.ext {
     glideVersion = "4.6.1"
     android = [
-            compileSdkVersion: 27,
+            compileSdkVersion: 28,
             buildToolsVersion: "27.0.1",
             applicationId    : "com.zhenquan.mycustomview",
             minSdkVersion    : 16,
-            targetSdkVersion : 26,
+            targetSdkVersion : 28,
             versionCode      : 1,
             versionName      : "1.0",
     ]
