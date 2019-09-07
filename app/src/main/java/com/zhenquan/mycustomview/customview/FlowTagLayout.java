@@ -97,10 +97,10 @@ public class FlowTagLayout extends ViewGroup {
 
         //获取Padding
         // 获得它的父容器为它设置的测量模式和大小
-        int sizeWidth = View.MeasureSpec.getSize(widthMeasureSpec);
-        int sizeHeight = View.MeasureSpec.getSize(heightMeasureSpec);
-        int modeWidth = View.MeasureSpec.getMode(widthMeasureSpec);
-        int modeHeight = View.MeasureSpec.getMode(heightMeasureSpec);
+        int sizeWidth = MeasureSpec.getSize(widthMeasureSpec);
+        int sizeHeight = MeasureSpec.getSize(heightMeasureSpec);
+        int modeWidth = MeasureSpec.getMode(widthMeasureSpec);
+        int modeHeight = MeasureSpec.getMode(heightMeasureSpec);
 
         //FlowLayout最终的宽度和高度值
         int resultWidth = 0;
@@ -122,7 +122,7 @@ public class FlowTagLayout extends ViewGroup {
             int childHeight = childView.getMeasuredHeight();
 
             //因为子View可能设置margin，这里要加上margin的距离
-            ViewGroup.MarginLayoutParams mlp = (ViewGroup.MarginLayoutParams) childView.getLayoutParams();
+            MarginLayoutParams mlp = (MarginLayoutParams) childView.getLayoutParams();
             int realChildWidth = childWidth + mlp.leftMargin + mlp.rightMargin;
             int realChildHeight = childHeight + mlp.topMargin + mlp.bottomMargin;
 
@@ -147,8 +147,8 @@ public class FlowTagLayout extends ViewGroup {
                 resultHeight += lineHeight;
             }
 
-            setMeasuredDimension(modeWidth == View.MeasureSpec.EXACTLY ? sizeWidth : resultWidth,
-                    modeHeight == View.MeasureSpec.EXACTLY ? sizeHeight : resultHeight);
+            setMeasuredDimension(modeWidth == MeasureSpec.EXACTLY ? sizeWidth : resultWidth,
+                    modeHeight == MeasureSpec.EXACTLY ? sizeHeight : resultHeight);
 
         }
 
@@ -176,7 +176,7 @@ public class FlowTagLayout extends ViewGroup {
             int childHeight = childView.getMeasuredHeight();
 
             //因为子View可能设置margin，这里要加上margin的距离
-            ViewGroup.MarginLayoutParams mlp = (ViewGroup.MarginLayoutParams) childView.getLayoutParams();
+            MarginLayoutParams mlp = (MarginLayoutParams) childView.getLayoutParams();
 
             if (childLeft + mlp.leftMargin + childWidth + mlp.rightMargin > flowWidth) {
                 //换行处理
@@ -195,8 +195,8 @@ public class FlowTagLayout extends ViewGroup {
     }
 
     @Override
-    public ViewGroup.LayoutParams generateLayoutParams(AttributeSet attrs) {
-        return new ViewGroup.MarginLayoutParams(getContext(), attrs);
+    public LayoutParams generateLayoutParams(AttributeSet attrs) {
+        return new MarginLayoutParams(getContext(), attrs);
     }
 
     public ListAdapter getAdapter() {
@@ -230,7 +230,7 @@ public class FlowTagLayout extends ViewGroup {
             if (childView == null) {
                 continue;
             }
-            addView(childView, new ViewGroup.MarginLayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+            addView(childView, new MarginLayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
             final int finalI = i;
 
 //            if (i == 0) {
@@ -412,7 +412,7 @@ public class FlowTagLayout extends ViewGroup {
             if (childView == null) {
                 continue;
             }
-            addView(childView, new ViewGroup.MarginLayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+            addView(childView, new MarginLayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 
             if (mCheckedTagArray.size() > i) {
                 boolean chooseValue = mCheckedTagArray.get(i);
