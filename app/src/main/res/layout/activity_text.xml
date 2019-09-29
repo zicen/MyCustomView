@@ -23,6 +23,7 @@
             a:tbv_border_radius="8dp"
             a:tbv_border_width="2dp"/>
     <com.zhenquan.mycustomview.customview.TextBorderView
+            android:id="@+id/tbv"
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
@@ -36,5 +37,12 @@
             a:tbv_bg_color="@color/colorPrimary"
             a:tbv_bg_select_color="@color/colorAccent"
             a:tbv_border_radius="8dp"
+    />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:textColor="#757575"
+              android:text="test"
+              android:id="@+id/txt"
     />
 </LinearLayout>

@@ -94,7 +94,7 @@ public class TextBorderView extends AppCompatTextView {
             default:
                 break;
         }
-        return true;
+        return  super.onTouchEvent(event);
     }
 
     private void actionDown() {

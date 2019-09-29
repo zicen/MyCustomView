@@ -2,7 +2,14 @@
 package com.zhenquan.mycustomview.utils;
 
 import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
+import android.text.style.AbsoluteSizeSpan;
+import android.text.style.ForegroundColorSpan;
 import android.util.DisplayMetrics;
+import android.util.TypedValue;
 import android.view.WindowManager;
 
 public class DisplayUtils {
@@ -28,5 +35,10 @@ public class DisplayUtils {
             return DisplayMetrics.DENSITY_DEFAULT;
         }
     }
+
+    public static float dp2px(float dp) {
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, Resources.getSystem().getDisplayMetrics());
+    }
+
 
 }

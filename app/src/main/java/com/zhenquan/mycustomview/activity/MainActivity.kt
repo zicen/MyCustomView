@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_circle_download.setOnClickListener(this)
         btn_shadow_helper.setOnClickListener(this)
         btn_path.setOnClickListener(this)
+        btn_toast.setOnClickListener(this)
+        btn_circle_menu.setOnClickListener(this)
     }
 
 
@@ -45,6 +47,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btn_path->{
                 startActivity(Intent(MainActivity@ this, PathActivity::class.java))
+            }
+            R.id.btn_toast->{
+                startActivity(Intent(MainActivity@ this, ToastActivity::class.java))
+            }
+            R.id.btn_circle_menu->{
+                startActivity(Intent(MainActivity@ this, CircleMenuActivity::class.java))
             }
         }
     }
