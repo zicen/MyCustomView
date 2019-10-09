@@ -52,12 +52,6 @@
             android:layout_height="wrap_content"/>
     <Button
             android:layout_width="match_parent"
-            android:text="Toast 适配"
-            android:textAllCaps="false"
-            android:id="@+id/btn_toast"
-            android:layout_height="wrap_content"/>
-    <Button
-            android:layout_width="match_parent"
             android:text="圆形菜单"
             android:textAllCaps="false"
             android:id="@+id/btn_circle_menu"

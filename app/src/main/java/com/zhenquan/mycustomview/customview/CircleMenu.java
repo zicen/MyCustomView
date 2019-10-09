@@ -1,6 +1,5 @@
 package com.zhenquan.mycustomview.customview;
 
-import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
@@ -8,14 +7,12 @@ import android.content.Context;
 import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.ConstraintHelper;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import com.zhenquan.mycustomview.R;
 import com.zhenquan.mycustomview.utils.DisplayUtils;
@@ -45,13 +42,13 @@ public class CircleMenu extends FrameLayout implements View.OnClickListener {
     public CircleMenu(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         View contentView = View.inflate(getContext(), R.layout.view_home_live_menu, this);
-        mContainer = (ConstraintLayout) findViewById(R.id.container);
-        mCardLiveStart = (CardView) findViewById(R.id.card_live_start);
-        mTxtLiveStart = (TextView) findViewById(R.id.txt_live_start);
-        mCardLiveCenter = (CardView) findViewById(R.id.card_live_center);
-        mTxtLiveCenter = (TextView) findViewById(R.id.txt_live_center);
-        mCardStatus = (CardView) findViewById(R.id.card_status);
-        mImgStatus = (ImageView) findViewById(R.id.img_status);
+        mContainer = findViewById(R.id.container);
+        mCardLiveStart = findViewById(R.id.card_live_start);
+        mTxtLiveStart = findViewById(R.id.txt_live_start);
+        mCardLiveCenter = findViewById(R.id.card_live_center);
+        mTxtLiveCenter = findViewById(R.id.txt_live_center);
+        mCardStatus = findViewById(R.id.card_status);
+        mImgStatus = findViewById(R.id.img_status);
         mCardLiveStart.setOnClickListener(this);
         mCardLiveCenter.setOnClickListener(this);
         menuViews.add(mCardLiveStart);

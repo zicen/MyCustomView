@@ -8,6 +8,7 @@ import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.zhenquan.mycustomview.R
+import kotlinx.android.synthetic.main.activity_circle_menu.*
 
 class CircleMenuActivity : AppCompatActivity() {
     private val menuViews = ArrayList<View>()
@@ -15,6 +16,7 @@ class CircleMenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_circle_menu)
+
         val fab1 = findViewById<FloatingActionButton>(R.id.fab1)
         val fab2 = findViewById<FloatingActionButton>(R.id.fab2)
         val fab3 = findViewById<FloatingActionButton>(R.id.fab3)
