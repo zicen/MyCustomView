@@ -38,9 +38,9 @@ public class ClearableEditText extends AppCompatEditText {
     private void init(Context context) {
         mClearDrawable = ContextCompat.getDrawable(context, R.drawable.delete_search_history);
         mDrawableLeft = ContextCompat.getDrawable(context, R.drawable.search_hint);
-        mClearDrawable.setBounds(0, 0, DisplayUtils.dipToPx(context, 15), DisplayUtils.dipToPx(context, 15));
-        mDrawableLeft.setBounds(0, 0, DisplayUtils.dipToPx(context, 15), DisplayUtils.dipToPx(context, 15));
-        setCompoundDrawablePadding(DisplayUtils.dipToPx(context, 9));
+        mClearDrawable.setBounds(0, 0, DisplayUtils.dip2px(context, 15), DisplayUtils.dip2px(context, 15));
+        mDrawableLeft.setBounds(0, 0, DisplayUtils.dip2px(context, 15), DisplayUtils.dip2px(context, 15));
+        setCompoundDrawablePadding(DisplayUtils.dip2px(context, 9));
         setCompoundDrawables(mDrawableLeft, null, null, null);
     }
 

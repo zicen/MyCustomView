@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(Intent(MainActivity@ this, EditActivity::class.java))
             }
             R.id.btn_text -> {
-                startActivity(Intent(MainActivity@ this, TextActivity::class.java))
+                startActivity(Intent(MainActivity@ this, DemoActivity::class.java))
             }
             R.id.btn_pie -> {
                 startActivity(Intent(MainActivity@ this, PieViewActivity::class.java))

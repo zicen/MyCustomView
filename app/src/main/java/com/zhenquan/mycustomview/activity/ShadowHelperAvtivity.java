@@ -20,13 +20,13 @@ public class ShadowHelperAvtivity extends AppCompatActivity {
 
         ShadowHelper.getInstance()
                 .setBgColor(R.color.colorPrimary)
-                .setShapeRadius(DisplayUtils.dipToPx(this, 6))
+                .setShapeRadius((int) DisplayUtils.dp2px(6))
                 .setShadowColor(Color.parseColor("#03000000"))
-                .setShadowRadius(DisplayUtils.dipToPx(this, 6))
-                .setOffsetX(DisplayUtils.dipToPx(this, 4))
-                .setOffsetY(DisplayUtils.dipToPx(this, 4))
+                .setShadowRadius((int) DisplayUtils.dp2px(6))
+                .setOffsetX((int) DisplayUtils.dp2px(4))
+                .setOffsetY((int) DisplayUtils.dp2px(4))
                 .into(btn1);
-        ViewCompat.setElevation(btn2,DisplayUtils.dipToPx(this, 4));
+        ViewCompat.setElevation(btn2, DisplayUtils.dp2px(4));
     }
 
 }

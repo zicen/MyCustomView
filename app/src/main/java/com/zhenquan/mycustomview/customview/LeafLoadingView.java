@@ -88,8 +88,8 @@ public class LeafLoadingView extends View {
     public LeafLoadingView(Context context, AttributeSet attrs) {
         super(context, attrs);
         mResources = getResources();
-        mLeftMargin = DisplayUtils.dipToPx(context, LEFT_MARGIN);
-        mRightMargin = DisplayUtils.dipToPx(context, RIGHT_MARGIN);
+        mLeftMargin = DisplayUtils.dip2px(context, LEFT_MARGIN);
+        mRightMargin = DisplayUtils.dip2px(context, RIGHT_MARGIN);
 
         mLeafFloatTime = LEAF_FLOAT_TIME;
         mLeafRotateTime = LEAF_ROTATE_TIME;

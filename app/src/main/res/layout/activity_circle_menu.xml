@@ -6,7 +6,20 @@
                                                    tools:ignore="MissingConstraints"
                                                    android:layout_height="match_parent"
 >
+    <View android:layout_width="200dp"
+          android:layout_height="50dp"
+          android:background="#ff0000"
+          android:id="@+id/live_danmu"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+    />
 
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/btn_send"
+            android:text="发送弹幕"
+    />
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab1"
             android:layout_width="50dp"

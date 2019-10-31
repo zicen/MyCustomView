@@ -10,6 +10,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity
+                android:name=".activity.DemoActivity"
+                android:label="@string/title_activity_demo"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity android:name=".activity.CircleMenuActivity">
         </activity>
         <activity android:name=".activity.ToastActivity">
