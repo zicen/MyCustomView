@@ -67,10 +67,10 @@
             android:tint="#fff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
-    <com.zhenquan.mycustomview.customview.CircleMenu android:layout_width="wrap_content"
-                                                     android:id="@+id/circle_menu"
-                                                     app:layout_constraintRight_toRightOf="parent"
-                                                     app:layout_constraintBottom_toTopOf="@id/fab_menu"
-                                                     android:layout_marginBottom="100dp"
-                                                     android:layout_height="wrap_content"/>
+    <com.zhenquan.mycustomview.customview.maoer.CircleMenu android:layout_width="wrap_content"
+                                                           android:id="@+id/circle_menu"
+                                                           app:layout_constraintRight_toRightOf="parent"
+                                                           app:layout_constraintBottom_toTopOf="@id/fab_menu"
+                                                           android:layout_marginBottom="100dp"
+                                                           android:layout_height="wrap_content"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

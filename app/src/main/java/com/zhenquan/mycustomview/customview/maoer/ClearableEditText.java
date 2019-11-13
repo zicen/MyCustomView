@@ -1,4 +1,4 @@
-package com.zhenquan.mycustomview.customview;
+package com.zhenquan.mycustomview.customview.maoer;
 
 import android.content.Context;
 import android.graphics.Rect;

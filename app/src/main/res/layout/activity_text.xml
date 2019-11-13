@@ -39,7 +39,7 @@
             a:tbv_border_radius="8dp"
     />
 
-    <com.zhenquan.mycustomview.customview.GradientTextView
+    <com.zhenquan.mycustomview.customview.maoer.GradientTextView
             android:layout_width="wrap_content"
             android:text="原子弹"
             android:id="@+id/txt"

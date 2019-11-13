@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import com.zhenquan.mycustomview.R;
-import com.zhenquan.mycustomview.customview.CircleDownloadProgressBar;
+import com.zhenquan.mycustomview.customview.maoer.CircleDownloadProgressBar;
 import com.zhenquan.mycustomview.utils.Enums;
 
 import java.util.ArrayList;

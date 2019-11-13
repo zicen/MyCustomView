@@ -4,7 +4,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-    <com.zhenquan.mycustomview.customview.ClearableEditText
+    <com.zhenquan.mycustomview.customview.maoer.ClearableEditText
             android:id="@+id/et_search"
             android:layout_width="match_parent"
             android:layout_height="30dp"

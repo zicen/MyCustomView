@@ -14,7 +14,7 @@
               android:textSize="18sp"
     />
 
-    <com.zhenquan.mycustomview.customview.CircleDownloadProgressBar
+    <com.zhenquan.mycustomview.customview.maoer.CircleDownloadProgressBar
             android:id="@+id/cdpb_status"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"

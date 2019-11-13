@@ -1,4 +1,4 @@
-package com.zhenquan.mycustomview.customview;
+package com.zhenquan.mycustomview.customview.maoer;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,7 +7,6 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.blankj.utilcode.util.LogUtils;
 import com.zhenquan.mycustomview.R;
 import com.zhenquan.mycustomview.utils.QMUIDirection;
 import com.zhenquan.mycustomview.utils.QMUIViewHelper;
