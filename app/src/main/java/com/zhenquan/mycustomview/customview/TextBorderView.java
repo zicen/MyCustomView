@@ -27,7 +27,7 @@ public class TextBorderView extends AppCompatTextView {
     private DrawFilter mDrawFilter;
 
     public TextBorderView(Context context) {
-        super(context, null);
+        this(context, null);
     }
 
     public TextBorderView(Context context, AttributeSet attrs) {
@@ -35,10 +35,6 @@ public class TextBorderView extends AppCompatTextView {
         init(attrs);
     }
 
-    public TextBorderView(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-        init(attrs);
-    }
 
     private void init(AttributeSet attrs) {
         parseAttr(attrs);
