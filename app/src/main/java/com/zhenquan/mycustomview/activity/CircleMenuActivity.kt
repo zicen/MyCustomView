@@ -61,52 +61,7 @@ class CircleMenuActivity : AppCompatActivity() {
 
         }
     }
-//    private void realSendEnterNotice(SocketJoinQueueItemBean socketJoinQueueItemBean) {
-//        stopEnterNoticeAnim();
-//        mLiveEnterNotice.setData(socketJoinQueueItemBean);
-//
-//        // mLiveEnterNotice.setLayerType(View.LAYER_TYPE_HARDWARE,null);
-//        int screenLeftX = -ScreenUtils.getAppScreenWidth() / 2;
-//        // 第一个动画
-//        PropertyValuesHolder pvhAlpha = PropertyValuesHolder.ofFloat("alpha", 0f, 1f);
-//        PropertyValuesHolder pvhTranslationX = PropertyValuesHolder.ofFloat("translationX",
-//        screenLeftX + DANMU_ENTER_END_X);
-//        ObjectAnimator anim = ObjectAnimator.ofPropertyValuesHolder(mLiveEnterNotice, pvhAlpha, pvhTranslationX);
-//        anim.setDuration(DANMU_ENTER_DURATION);
-//        anim.setInterpolator(new DecelerateInterpolator());
-//
-//        // 第二个动画
-//        PropertyValuesHolder pvhAlpha2 = PropertyValuesHolder.ofFloat("alpha", 1f, 0f);
-//        PropertyValuesHolder pvhTranslationX2 = PropertyValuesHolder.ofFloat("translationX",
-//        screenLeftX - mLiveEnterNotice.getWidth());
-//        ObjectAnimator anim2 = ObjectAnimator.ofPropertyValuesHolder(mLiveEnterNotice, pvhAlpha2, pvhTranslationX2);
-//        anim2.setDuration(DANMU_QUIT_DURATION);
-//        anim2.setInterpolator(new AccelerateInterpolator());
-//
-//        mEnterNoticeanimSet = new AnimatorSet();
-//        // mEnterNoticeanimSet.setInterpolator(new AccelerateDecelerateInterpolator());
-//        // 动画执行的监听回调事件
-//        mEnterNoticeanimSet.addListener(new AnimatorListenerAdapter() {
-//            @Override
-//            public void onAnimationEnd(Animator animation) {
-//                // 动画结束 设置控件到初始位置
-//                if (mLiveEnterNotice == null || isQuitRoom) {
-//                    return;
-//                }
-//                // mLiveEnterNotice.setLayerType(View.LAYER_TYPE_NONE,null);
-//                mLiveEnterNotice.setX(ScreenUtils.getAppScreenWidth());
-//                mLiveEnterNotice.requestLayout();
-//                LiveNoticeQueueManager.getInstance().getLiveEnterNoticeQueue().notifyTask();
-//            }
-//        });
-//
-//        mEnterNoticeanimSet.play(anim);
-//        mEnterNoticeanimSet.play(anim2)
-//            .after(DANMU_STAY_DURATION + DANMU_ENTER_DURATION);
-//        // 正式启动动画集
-//        mEnterNoticeanimSet.start();
-//
-//    }
+
     private fun switchMenu(isOpen: Boolean) {
         val startRadius = dpToPixel(if (isOpen) 90 else 0)
         val endRadius = dpToPixel(if (isOpen) 0 else 90)
